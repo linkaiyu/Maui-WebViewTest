@@ -9,12 +9,6 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-            
             <Button
                 x:Name="btnExecuteJS"
                 Text="Execute Javascript in WebView"
@@ -26,6 +20,12 @@
                      Source="https://digital.fidelity.com/stgw/digital/fidchart/consumers/atp/0.0.4/atp-chart.html"
                      WidthRequest="700"
                      HeightRequest="600" />
+
+            <WebView x:Name="webViewChartIQ"
+                     Source="https://demo.chartiq.com"
+                     WidthRequest="700"
+                     HeightRequest="600" />
+
 
         </VerticalStackLayout>
     </ScrollView>
